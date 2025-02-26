@@ -27,6 +27,17 @@ public class Users {
     })
     private Company company;
 
+     // Добавление конструктора с параметрами
+     public Users(Long id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
+    // Конструктор по умолчанию
+    public Users() {
+    }
+
     // Getters and Setters
     public Long getId() {
         return id;
